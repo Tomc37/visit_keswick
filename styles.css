@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: rgb(2, 85, 2);
+}
+
+header {
+     text-align: center;
+     padding-bottom: 1rem;
+     width: 100%;
+     position: fixed;
+     z-index: 10;
+}
+
+#title_nav_container {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+    background-color: white;
+    border-bottom: 8px solid rgb(2, 85, 2);
+}
+
+#title_nav_container h2 {
+    font-family: 'Dancing Script', cursive;
+    margin-left: .5rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+nav {
+    margin-right: .5rem;
+}
+nav li {
+    display: inline;
+    padding: .5rem;
+}
+
+nav li a {
+    display: inline;
+    padding: .75rem;
+}
+
+nav li a:hover {
+    display: inline;
+    padding: 0 .75rem;
+    background-color: rgb(2, 63, 2);
+    color: white;
+    border-radius: 4px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#container {
+    position: relative;
+    top: 4.5rem;
+    margin: 0 auto;
+    width: 55%;
+    height: auto;
+    display: inline-flexbox;
+    flex-direction: column;
+    align-items: center;
+}
+
+#banner {
+    width: 100%;
+    height: 35rem;
+    background-image: url("./images/derwent_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.section_header {
+    background-color: rgb(2, 63, 2);
+    width: 100%;
+    margin: 0.5em auto;
+}
+
+.section_header h2 {
+    line-height: 3em;
+    color: white;
+    margin-left: 1em;
+}
+
+.section_gallery {
+    display: inline-flex;
+    justify-content: space-around;
+    width: 100%;  
+    flex-wrap: wrap;
+}
+
+.section_gallery figure {
+    max-width: 30%;
+}
+
+.section_gallery figure a {
+    text-decoration: none;
+}
+
+.section_gallery figure img {
+    width: 100%;
+}
+
+.section_gallery figcaption {
+    text-align: center;
+}
+
+.accommodation_item_container {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    border: 1px solid rgb(2, 85, 2);
+    justify-content: space-around;
+    border-radius: 5px;
+    margin: 0.5em 0;
+}
+
+.accommodation_item_container a {
+    width: 100%;
+    text-align: center;
+    padding-bottom: .5em;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.accommodation_item_container img {
+    max-width: 30%;
+    padding-bottom: .5em;
+}
+
+.accommodation_item_container p {
+    flex-basis: 60%;
+    padding-bottom: .5em;
+}
+
+#location_container {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+    margin: 0.5em 0;
+}
+
+#location_container img {
+    width: 35%;
+}
+
+#location_container p {
+    width: 50%;
+    text-align: justify;
+}
+
+footer {
+    border-top: 1px solid grey;
+    position: relative;
+    top: 4.5rem;
+}
+
+footer h5 {
+    font-size: .75rem;
+    text-align: left;
+    padding: 0.5rem 0.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .section_gallery figure {
+        max-width: 40%;
+    }
+    
+    .section_gallery figure img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section_gallery figure {
+        max-width: 70%;
+    }
+    
+    .section_gallery figure img {
+        width: 100%;
+    }
+}
