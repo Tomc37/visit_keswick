@@ -222,6 +222,7 @@ footer h5 {
 
     .accommodation_item_container p {
         padding: .5rem .5rem;
+        max-width: 95%;
     }
 
     #location_container {
@@ -330,12 +331,13 @@ footer h5 {
     }
 
     .accommodation_item_container img {
-        max-width: 60%;
+        max-width: 100%;
         padding-bottom: .5em;
     }
 
     .accommodation_item_container p {
         padding: .5rem .5rem;
+        max-width: 100%;
     }
 
     #location_container {
